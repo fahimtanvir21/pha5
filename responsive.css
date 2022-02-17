@@ -1,0 +1,19 @@
+<style>
+
+.grid-column-two {
+  float: center;
+  width: 50%;
+}
+
+.main-section {
+  float: center;
+  width: 60%;
+}
+
+/* Use a media query to add a breakpoint at 450px: */
+@media screen and (max-width: 450px) {
+    .grid-column-two, .main-section {
+    width: 100%; /* The width is 100%, when the viewport is 450px or smaller */
+  }
+}
+</style>

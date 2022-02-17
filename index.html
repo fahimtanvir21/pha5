@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albetra Finance Inc.</title>
+
+  <!-- favicon  -->
+
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- css -->
+
+  <link rel="stylesheet" href="responsive.css">
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- google fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Oswald:wght@500&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+
+<!-- body start -->
+
+<body>
+  <header>
+    <h1 id="head-Name"> Albetra Finance </h1>
+    <img width="50px" src="images/favicon.png" alt="">
+  </header>
+
+  <main>
+    <section class="main-section">
+      <div class="grid-column-one">
+        <img width="100%" src="images/1376061.svg" alt="mix words">
+      </div>
+      <div class="grid-column-two">
+
+        <!-- income balance -->
+
+        <div class="income-class">
+          <h1>Income</h1>
+          <label for="incomeBalance">Income:</label>
+          <input class="top-input-field" type="text" name="incomeBalance" id="incomeBalance">
+          <p id="incomeError">INPUT NUMBER</p>
+          <p id="incomeSmallError">EXPENSES IS GREATER THAT INCOME!</p>
+        </div>
+
+        <!-- spending balance  -->
+
+        <div class="spending-class">
+          <h1>Expenses</h1>
+
+          <!-- food exp  -->
+
+          <div class="food-div spending-div">
+            <label for="foodExp">Food:</label>
+            <input class="top-input-field" type="text" name="foodExp" id="foodExp">
+            <p id="foodError">INPUT NUMBER</p>
+          </div>
+
+          <!-- rent exp  -->
+          <div class="rent-div spending-div">
+            <label for="rentExp">Rent:</label>
+            <input class="top-input-field" type="text" name="rentExp" id="rentExp">
+            <p id="rentError">INPUT NUMBER</p>
+          </div>
+          <!-- clothing exp  -->
+          <div class="clothes-div spending-div">
+            <label for="clothingExp">Clothing:</label>
+            <input class="top-input-field" type="text" name="clothingExp" id="clothingExp">
+            <p id="clothesError">INPUT NUMBER</p>
+          </div>
+          <div class="calculate-div">
+            <button id="calculateButton" type="submit">Calculate</button>
+          </div>
+      </div>
+        <div>
+          <h2 id="totalExpense">Total Expenses : <span id="totalExpensesInner">00</span></h2>
+          <h2 id="balance">Balance: <span id="balanceInner">00</span></h2>
+          <p id="insufficientSavinError"></p>
+          <br>
+        </div>
+
+        <!-- saving -->
+
+        <div class="saving-field">
+          <div>
+            <label for="saveFor">Save:</label>
+            <input id="savingInput" type="text" name="saveFor" id="saveFor" value="5">
+            <span id="percantageSign">%</span>
+            <button id="saveButton" type="submit" disabled>Save</button>
+            <p id="savingError">INPUT NUMBER</p>
+          </div>
+          <div>
+            <h2 id="savingAmountText">Saving Amounts: <span id="savingInner">000</span></h2>
+            <h2 id="remainingText">Remaining Balance: <span id="remainingInner">000</span></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+<!-- body end -->
+
+</html>
